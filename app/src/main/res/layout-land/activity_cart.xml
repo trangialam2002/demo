@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CartActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="#A62828"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:layout_marginRight="20dp"
+            android:id="@+id/ibtnBackCart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_back"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:text="Giỏ Hàng"
+            android:layout_width="650dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <LinearLayout
+            android:id="@+id/container_empty_cart"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/emptycart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:text="Giỏ Hàng Trống"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ListView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/listViewCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtTongTien"
+            android:textColor="#DB8607"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:text="Tổng Tiền: 10.000.000 VNĐ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnThanhToanGioHang"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Thanh Toán Giỏ Hàng"
+            android:background="@null"
+            android:backgroundTint="#A62828"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <Button
+            android:id="@+id/btnMuaHang"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Tiếp tục mua hàng"
+            android:background="@null"
+            android:backgroundTint="#A62828"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+</LinearLayout>

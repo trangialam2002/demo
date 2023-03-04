@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DienThoaiActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLuaChonDT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="#A62828"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageButton
+                    android:id="@+id/ibtnBackDT"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_back"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                <TextView
+                    android:id="@+id/tieudeDT"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:text="ĐIỆN THOẠI"
+                    android:layout_width="580dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:textAlignment="center"
+                    android:id="@+id/txtNhapTenDT"
+                    android:hint="Nhập tên để tìm..."
+                    android:visibility="gone"
+                    android:layout_width="580dp"
+                    android:layout_height="match_parent"/>
+
+                <ImageButton
+                    android:id="@+id/ibtntimkiemDT"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@null"
+                    android:src="@android:drawable/ic_menu_search"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                <ImageButton
+                    android:visibility="gone"
+                    android:id="@+id/ibtnCloseDT"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:id="@+id/ibtnCartDT"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_cart"
+                    android:background="@null"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+                <ImageButton
+                    android:id="@+id/ibtnluachonDT"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_more_vert"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:layout_gravity="center"
+                style="@android:style/Widget.ProgressBar.Small.Inverse"
+                android:max="100"
+                android:id="@+id/progressBarDT"
+                android:layout_marginTop="3dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <ListView
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:id="@+id/listViewSP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:layout_gravity="left|bottom"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content">
+            <ListView
+                android:id="@+id/listViewLuaChonDT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

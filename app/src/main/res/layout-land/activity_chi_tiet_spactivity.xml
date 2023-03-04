@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ChiTietSPActivity">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#A62828"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:id="@+id/ibtnBackChiTietSP"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_back"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <TextView
+            android:textColor="#F7FFFFFF"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:text="THÔNG TIN CHI TIẾT"
+            android:layout_width="640dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/ibtnCartChiTiet"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_cart"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            app:cardCornerRadius="30dp"
+            android:layout_width="0dp"
+            android:layout_height="200dp">
+            <ImageView
+                android:paddingLeft="10dp"
+                android:scaleType="fitXY"
+                android:id="@+id/imgChiTietSP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:mipmap/sym_def_app_icon" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtTenChiTietSP"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:text="đây là tên chi tiết sản phẩm"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
+            <TextView
+                android:id="@+id/txtGiaChiTietSP"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:text="Giá: 10.000.000 VNĐ"
+                android:textColor="#007FD4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageButton
+                    android:id="@+id/ibtnGiamSoLuong"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_giam"
+                    tools:ignore="SpeakableTextPresentCheck" />
+                <EditText
+                    android:id="@+id/txtSoLuong"
+                    android:textColor="#E4E05E36"
+                    android:textSize="22dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/ibtnTangSoLuong"
+                    android:src="@drawable/ic_tang"
+                    android:background="@null"
+                    android:scaleType="center"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btnThemVaoGioHang"
+                android:backgroundTint="#E88E0A"
+                android:background="@null"
+                android:textSize="15dp"
+                android:text="Thêm Giỏ Hàng"
+                android:layout_width="200dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông số kỹ thuật"
+            android:textColor="#464646"
+            android:textSize="27dp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:text="đây là phần mô tả chi tiết một sản phẩm"
+                android:id="@+id/txtMoTaSP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

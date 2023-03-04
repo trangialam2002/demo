@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CaiDatActivity">
+    <LinearLayout
+        android:background="#A62828"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@+id/ibtnbackCaiDat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_back"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="630dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="CÀI ĐẶT"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ibtnCartCaiDat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@drawable/ic_cart"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/thongtin"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:src="@drawable/ic_info"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Thông tin khách hàng"
+            android:textColor="#A62828"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:background="#18393737"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <LinearLayout
+        android:id="@+id/hoadon"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:src="@drawable/ic_hoadon"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textColor="#A62828"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="27dp"
+            android:text="Thông tin hóa đơn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView
+        android:background="#18393737"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <LinearLayout
+        android:id="@+id/logout"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:src="@drawable/ic_logout"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textColor="#A62828"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="Thoát"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
